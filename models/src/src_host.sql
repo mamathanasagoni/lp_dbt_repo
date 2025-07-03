@@ -1,10 +1,9 @@
-src_hosts.sql as
 
 WITH raw_hosts AS (
     SELECT
         *
     FROM
-       DATA_ENG_DBT.RAW.RAW_HOSTS
+       {{source('airbnb','host')}}
 )
 SELECT
     id AS host_id,
