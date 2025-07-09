@@ -28,3 +28,6 @@ with cleaned_data as(
 )
  
 SELECT * FROM cleaned_data
+
+
+
